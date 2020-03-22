@@ -253,5 +253,5 @@ app.get('/items', function(req, res) {
 
 //Declaramos el puerto de la app en el 4444 y enviamos mensaje de inicio por consola
 var server = app.listen(4444, function () {
-    console.log('Iniciando servidor..'); 
+    console.log('Iniciando servidor en puerto 4444..'); 
 });
