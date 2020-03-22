@@ -1,0 +1,159 @@
+body {
+  background-color: #ccc;
+}
+
+a {
+  color: #3B86A2;
+  text-decoration: none;
+  transition: color .5s ease;
+}
+
+a:hover {
+  color: black;
+}
+
+#contenido-error {
+  border: 2px solid #7B7B7B;
+  width: 900px;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 50px;
+}
+
+@media only screen and (min-width: 1100px) {
+
+header {
+  background-color: #FEEF45;
+  height: 65px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.search-bar{
+  position:relative;
+  border-radius:4px;
+  top:10px;
+  height:40px;
+  margin-top:-45px;
+  margin-left:250px;
+  width:650px;
+  border-top:2px solid #888;
+  border-left:2px solid #888;
+  border-right:2px solid #888;
+  border-bottom:4px solid #888;
+}
+
+.search-bar input{
+  position:relative;
+  color:#000;
+  height:100%;
+  padding-left:14.0px;
+  width:606px;
+  border:none;
+  outline:none;
+}
+
+.search-bar span{
+  float:right;
+  width: 30px;
+  height:42px;
+  background-color:#DDD;
+}
+
+.search-bar button{
+  margin-left:3px;
+  margin-top:12px;
+  background:none;
+  cursor:pointer;
+  border:none;
+  outline:none;
+  }
+}
+
+/*Celulares*/
+@media only screen and (max-width: 1100px) {
+
+header {
+  background-color: #FEEF45;
+  height: 65px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width:100%;
+  position: absolute;
+}
+
+.search-bar{
+  position:relative;
+  border-radius:4px;
+  top:10px;
+  height:50px;
+  margin-top:-50px;
+  margin-left:250px;
+  width:650px;
+  border-top:2px solid #888;
+  border-left:2px solid #888;
+  border-right:2px solid #888;
+  border-bottom:4px solid #888;
+}
+
+.search-bar input{
+  position:relative;
+  color:#000;
+  height:100%;
+  padding-left:13.9px;
+  width:606px;
+  border:none;
+  outline:none;
+}
+
+.search-bar span{
+  float:right;
+  width: 30px;
+  height:52px;
+  background-color:#DDD;
+}
+
+.search-bar button{
+  margin-left:2px;
+  margin-top:16px;
+  background:none;
+  cursor:pointer;
+  border:none;
+  outline:none;
+}
+}
+
+img {
+  border-radius: 8px;
+}
+
+.search-bar input::placeholder{
+  color:#AAA;
+  font-weight:bold;
+}
+
+h1 {
+  display: block;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.2em;
+}
+
+h3 {
+  display: block;
+  font-size: 1.0em;
+}
+
+h5 {
+  display: block;
+  font-size: 0.85em;
+}
+
+h5 {
+  display: block;
+  font-size: 0.7em;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title><%=filtrar%> - <%= search %></title>
+
+    <!-- Css Principal  --->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/search.css">
+
+    <!-- Css Iconos - FancyPlus  --->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+
+<body>
+  <header>
+
+    <!-- Centramos todo el header  --->
+    <div align='center'>
+
+      <!-- Div del logo  --->
+      <div id='logo'>
+      <a href='./'><img width="160px" height="41px" src="img/meli.png" /></a>
+      </div>
+
+      <!-- Formulario para búsquedas  --->
+      <form class="form" action="/search" method="post">              
+      <div class="search-bar">
+      <input name="q" value="<%= search %>" placeholder="Nunca dejes de buscar"></input>
+      <span><button id="search-button"><i class="fa fa-search"></i></button></span>
+      </div>
+      </form>
+      
+    </div>
+  </header>
+
+<!-- Centramos el contenido  --->
+<div align="center">
+
+      <!-- Escribimos la categoría de los productos buscados  --->
+      <br><h3 class='filtro'><%=filtrar%></h3><br>
+      <% for(var i=0; i<4; i++) { %>
+
+      <!-- Div Contenido  --->
+      <div id='contenido'>
+        <a href="items?id=<%=id[i]%>"><img width="150px" height="150px" class='imagen' align="left" src="<%= imagen[i] %>"></img></a>
+          <h3 class='titulo'><a href="items?id=<%=id[i]%>"><%=titulo[i]%> </a></h3>
+          <h1 class='precio'>$ <%=precio[i]%> </h1>
+          <h4 class='ubicacion'><%=ubicacion[i]%> </h4>
+          <h5 class='vendidos'><%=vendidos[i]%> vendidos</h5>
+      </div>
+      <% } %>
+      </div>
+      <br>
+</div>
+
+</body>
+</html>

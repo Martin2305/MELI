@@ -1,0 +1,385 @@
+
+@font-face {
+  font-family: 'ITCSerifGothicStdHeavy';
+  src: url("https://dl.dropboxusercontent.com/u/216723067/SerifGothicStd-Heavy/serifgothicstd-heavy.eot");
+  src: url("https://dl.dropboxusercontent.com/u/216723067/SerifGothicStd-Heavy/serifgothicstd-heavy.eot") format("embedded-opentype"), url("https://dl.dropboxusercontent.com/u/216723067/SerifGothicStd-Heavy/serifgothicstd-heavy.woff") format("woff"), url("https://dl.dropboxusercontent.com/u/216723067/SerifGothicStd-Heavy/serifgothicstd-heavy.ttf") format("truetype"), url("https://dl.dropboxusercontent.com/u/216723067/SerifGothicStd-Heavy/serifgothicstd-heavy.svg#ITCSerifGothicStdHeavy") format("svg");
+}
+
+body {
+  font-family: 'ITCSerifGothicStdHeavy';
+}
+
+@media only screen and (min-width: 1100px) {
+
+
+  #logo {
+    position:relative;
+    top:10px;
+    border-radius:4px;
+    padding-right:710px;
+    align:left;
+    width:200px;
+  }
+  
+  #contenido {
+    border-bottom: 1px solid #bbb;
+    width: 900px;
+    border: 2px solid #7B7B7B;
+    background-color: #fff;
+    padding-bottom: 10px;
+    min-height: 22.3em;
+    border-radius: 12px;
+    margin: auto;
+    position: relative; 
+    margin-bottom:30px;
+    align-items: center;
+  }
+  
+  #widget {
+    background-color: #FAFAFA;
+    left:288px;
+    position: relative;
+    top: 10px;
+    border-bottom: 1px solid #bbb;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    min-height: 2.3em;
+    text-align:center;
+    right: 550px;
+  }
+
+  #especificaciones {
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #bbb;
+    width: 878px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    min-height: 1.3em;
+    align:left;
+    text-align:center;
+  }  
+
+  .especificaciones-tipo {
+    font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
+    Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+    font-size:16px;
+    color: #333;
+    font-weight: 550;
+    padding-top:10px;
+    padding-left:13px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .especificaciones-value {
+    font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
+    Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+    font-size:15px;
+    color: #555;
+    font-weight: 550;
+    padding-top:5px;
+    padding-left:13px;
+    text-align: center;
+  }
+  
+  .titulo {
+    font-family: "Proxima Nova",Helvetica,Arial,sans-serif;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.2;
+    max-width: inherit;
+    font-weight: 600;
+    font-size:22px;
+    padding-top:10px;
+    padding-left:11px;
+    text-align: left;
+  }
+
+  .condicion-venta {
+    font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
+    Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+    font-size:14px;
+    color: #555;
+    font-weight: 550;
+    padding-top:10px;
+    padding-left:13px;
+    text-align: left;
+  }
+  
+  .precio {
+    font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
+    Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+    font-weight: lighter;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,.1);
+    font-size:32px;
+    font-weight: 650;
+    color: #027430;
+    padding-top:18px;
+    padding-left:13px;
+    text-align: left;
+  }
+  
+  .stock {
+    font-family: "Segoe UI";
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,.1);
+    font-size:17px;
+    font-weight: 350;
+    color: #333;
+    padding-top:10px;
+    padding-left:13px;
+    text-align: left;
+  }
+  
+  .envio {
+    font-family: "Segoe UI";
+    font-size: 16px;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding-top:10px;
+    padding-left:10px;
+    text-align: center;
+    color: #00A341;
+  }
+  
+  .compra {
+    font-family: "Segoe UI";
+    display: inline-block;
+    padding: 10px 69px;
+    font-weight: 320;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4D91FF;
+    border: none;
+    border-radius: 7px;
+  }
+  
+  .carrito {
+    font-family: "Segoe UI";
+    display: inline-block;
+    padding: 10px 62px;
+    margin-top:10px;
+    font-weight: 320;
+    font-size: 21px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #2B78F4;
+    background-color: #fff;
+    border: 1px solid #2B78F4;
+    border-radius: 7px;
+  
+  }
+}
+
+/*Celulares*/
+@media only screen and (max-width: 1100px) {
+  
+  #logo {
+    position:relative;
+    top:15px;
+    border-radius:4px;
+    margin-right:700px;
+    width:200px;
+  }
+  
+  #contenido {
+    border-bottom: 1px solid #bbb;
+    width: 900px;
+    border: 2px solid #7B7B7B;
+    background-color: #fff;
+    padding-bottom: 11px;
+    min-height: 41.7em;
+    border-radius: 12px;
+    margin: auto;
+    position: relative; 
+    margin-left:95px;
+    margin-top: 70px;
+    margin-bottom:30px;
+    align-items: center;
+  }
+
+  #widget {
+    background-color: #FAFAFA;
+    left:288px;
+    position: relative;
+    top:10px;
+    border-bottom: 1px solid #bbb;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    min-height: 22.3em;
+    align:left;
+    right: 550px;
+  }
+
+  #especificaciones {
+    background-color: #FAFAFA;
+    display: inline-block;
+    left:13px;
+    position: absolute;
+    top:460px;
+    border-bottom: 1px solid #bbb;
+    width: 97%;
+    border: 1px solid #ccc;
+    padding-bottom:15px;
+    border-radius: 15px;
+    min-height: 11.3em;
+    align:left;
+    text-align:center;
+  }  
+
+  .especificaciones-tipo {
+    font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
+    Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+    font-size:16px;
+    color: #333;
+    font-weight: 550;
+    padding-top:10px;
+    padding-left:13px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .especificaciones-value {
+    font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
+    Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+    font-size:15px;
+    color: #555;
+    font-weight: 550;
+    padding-top:5px;
+    padding-left:13px;
+    text-align: center;
+  }
+  
+  .condicion-venta {
+    font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
+    Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+    font-size:15px;
+    color: #555;
+    font-weight: 550;
+    padding-top:10px;
+    padding-left:15px;
+    text-align: left;
+  }
+
+  .titulo {
+    font-family: "Proxima Nova",Helvetica,Arial,sans-serif;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.2;
+    max-width: inherit;
+    font-weight: 600;
+    font-size:27px;
+    padding-top:15px;
+    padding-left:15px;
+    text-align: left;
+  }
+  
+  .precio {
+    font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
+    Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+    font-weight: lighter;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,.1);
+    font-size:27px;
+    font-weight: 650;
+    color: #027430;
+    padding-top:40px;
+    padding-left:13px;
+    text-align: left;
+  }
+  
+  .stock {
+    font-family: "Segoe UI";
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,.1);
+    font-size:16px;
+    font-weight: 350;
+    color: #333;
+    padding-top:10px;
+    padding-left:13px;
+    text-align: left;
+  }
+  
+  .envio {
+    font-family: "Segoe UI";
+    font-size: 16px;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding-top:10px;
+    padding-left:13px;
+    text-align: center;
+    color: #00A341;
+  }
+  
+  .compra {
+    font-family: "Segoe UI";
+    display: inline-block;
+    padding: 10px 69px;
+    font-weight: 320;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4D91FF;
+    border: none;
+    border-radius: 7px;
+  }
+  
+  .carrito {
+    font-family: "Segoe UI";
+    display: inline-block;
+    padding: 10px 62px;
+    margin-top:10px;
+    font-weight: 320;
+    font-size: 21px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #2B78F4;
+    background-color: #fff;
+    border: 1px solid #2B78F4;
+    border-radius: 7px;
+  }
+}
+
+.carrito:hover {background-color: #F4F4F4}
+.carrito:active {
+    background-color: #F4F4F4;
+    transform: translateY(4px);
+}
+
+.compra:hover {background-color: #3483fa}
+.compra:active {
+    background-color: #3483fa;
+    transform: translateY(4px);
+}
+
+#left{float:left;width:200px;}
+#right{float:right;width:200px;}
+#center{margin:0 auto;width:200px;}
+
+#gallery_01 img {
+    border: 2px solid white;
+}
+
+.active img {
+    border: 2px solid #333 !important;
+}

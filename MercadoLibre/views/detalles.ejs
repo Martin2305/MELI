@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title><%=title[0]%></title>
+
+  <!-- Css Principal  --->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/template.css">
+  <link rel="stylesheet" href="css/detalles.css">
+  <!-- Css Iconos - FancyPlus  --->
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/igorlino/fancybox-plus/1.3.6/css/jquery.fancybox-plus.css" media="screen"/>
+  <!-- Css Para Slider de imagenes  --->
+  <link rel="stylesheet" href="css/slider.css">
+
+  <!-- Jquery  --->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <!-- Galeria Slider  --->
+  <script type="text/javascript" src="js/fancybox.js"></script>
+  <script type="text/javascript" src="js/ezplus.js"></script>
+  <script type="text/javascript" src="js/slider.js"></script>
+
+</head>
+
+<body>
+  <header>
+    
+    <!-- Centramos todo el header  --->
+    <div align='center'>
+
+      <!-- Div del logo  --->
+      <div id='logo'>
+      <a href='./'><img width="160px" height="41px" src="img/meli.png" /></a>
+      </div>
+
+      <!-- Formulario para búsquedas  --->
+      <form class="form" action="/search" method="post">              
+      <div class="search-bar">
+      <input name="q" placeholder="Nunca dejes de buscar"></input>
+      <span><button id="search-button"><i class="fa fa-search"></i></button></span>
+      </div>
+      </form>
+
+    </div>
+  </header>
+
+<br><br>
+<!-- Centramos todo el header  --->
+<div align="center">
+
+    <!-- Div Contenido  --->
+    <div id='contenido'>
+
+      <!-- Div Slider  --->
+    <div class="slider">
+    <div class="slider__for">
+
+      <!-- Imagen principal  --->
+    <img style="max-width:600px; max-height:300px;" class="zoom-img" id="zoom_03f"
+    src="<%=thumbnail[0]%>"
+    data-zoom-image="<%=thumbnail[0]%>"/>
+    </div>
+
+    <div class="slider__nav">
+      <!-- Imagen secundarias (Primera que aparece con la clase "Active") (Nav)  --->
+      <div id="gallery_01f" style="width:200px;float:left; margin-left:-60px; vertical-align: top;">
+        <a href="#" class="elevatezoom-gallery active" data-update=""
+        data-image="<%=thumbnail[0]%>"
+        data-zoom-image="<%=thumbnail[0]%>">
+        <img src="<%=thumbnail[0]%>"
+        width="65" height="80" /></a>
+        <br>
+    <%
+        var t = 1;
+        while (t < total_img) { %> 
+        <!-- Imagen secundarias (Las demas imagenes)  --->
+        <a href="#" class="elevatezoom-gallery" data-update=""
+        data-image="<%=thumbnail[t]%>"
+        data-zoom-image="<%=thumbnail[t]%>">
+        <img src="<%=thumbnail[t]%>"
+        width="65" height="80" /></a>
+        <br>
+        <% t++; } %>
+      </div>
+    </div>
+</div>
+
+  <!-- Cambiamos el valor de la variable extraída (Esto es complementario, pero queda mejor visualmente)  --->
+  <% if (atributosvalue[0] == '') { atributosvalue[0] = 'N/D'; } %> 
+  <% if (atributosvalue[1] == '') { atributosvalue[1] = 'N/D'; } %> 
+  <% if (atributosvalue[2] == '') { atributosvalue[2] = 'N/D'; } %> 
+  <% if (atributosvalue[3] == '') { atributosvalue[3] = 'N/D'; } %> 
+  <% if (atributosvalue[4] == '') { atributosvalue[4] = 'N/D'; } %> 
+  <% if (atributosvalue[5] == '') { atributosvalue[5] = 'N/D'; } %> 
+  <% if (condicion[0] == 'used') { condicion[0] = 'Usado'; } else { condicion[0] = 'Nuevo'; } %> 
+  <% if (cantidad[0] == '0') { cantidad[0] = 'Sin stock'; } else { cantidad[0] = 'Stock disponible'; } %> 
+
+<!-- Widget lado derecho  --->
+<div id='widget'>
+  <!-- Condición del artículo y ventas  --->
+  <h4 class='condicion-venta'><%=condicion[0]%> | <%=ventas[0]%> vendidos </h4>
+  <!-- Título de la publicación  --->
+  <h1 class='titulo'><%=title[0]%> </h1>
+  <!-- Precio de la publicación  --->
+  <h1 class='precio'>$ <%=precio[0]%> </h1>
+  <!-- Cantidad de stock  --->
+  <h1 class='stock'><%=cantidad[0]%> </h1>
+  <!-- Verificamos si el envío es gratis  ---> 
+  <% if (shipping == 'true') { %> 
+  <h1 class='envio'>Envío gratis a todo el país <span class="fa fa-truck"></span></h1>
+  <% } %> 
+  <br>
+
+  <!-- Botones  --->
+  <button class="compra">Comprar ahora</button>
+  <button class="carrito">Agregar al carrito</button><br><br>
+</div>
+
+  <br><br>
+
+<!-- Div especifaciones del producto  --->
+<div id='especificaciones'>
+    <!-- Tipo de especificación  --->
+    <div id="left" style="font-weight: bold; font-weight: 900;" class="especificaciones-tipo"><%=atributos[0]%>:</div>
+    <div id="right" style="font-weight: bold; font-weight: 900;"  class="especificaciones-tipo"><%=atributos[1]%>:</div>
+    <div id="center" style="font-weight: bold; font-weight: 900;"  class="especificaciones-tipo"><%=atributos[2]%>:</div>
+    <br>
+    <!-- Valor de especificación  --->
+    <div id="left" class="especificaciones-value"><%=atributosvalue[0]%></div>
+    <div id="right" class="especificaciones-value"><%=atributosvalue[1]%></div>
+    <div id="center" class="especificaciones-value"><%=atributosvalue[2]%></div>
+    <br>
+    <br>
+    <!-- Tipo de especificación  --->
+    <div id="left" style="font-weight: bold; font-weight: 900;" class="especificaciones-tipo"><%=atributos[3]%>:</div>
+    <div id="right" style="font-weight: bold; font-weight: 900;"  class="especificaciones-tipo"><%=atributos[4]%>:</div>
+    <div id="center" style="font-weight: bold; font-weight: 900;"  class="especificaciones-tipo"><%=atributos[5]%>:</div>
+    <br>
+    <!-- Valor de especificación  --->
+    <div id="left" class="especificaciones-value"><%=atributosvalue[3]%></div>
+    <div id="right" class="especificaciones-value"><%=atributosvalue[4]%></div>
+    <div id="center" class="especificaciones-value"><%=atributosvalue[5]%></div>
+    <br>
+</div>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

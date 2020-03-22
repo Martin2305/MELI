@@ -1,0 +1,21 @@
+@media only screen and (min-width: 1100px) {
+  #logo {
+    position:relative;
+    top:10px;
+    border-radius:4px;
+    padding-right:710px;
+    align:left;
+    width:200px;
+  }
+}
+
+/*Celulares*/
+@media only screen and (max-width: 1100px) {
+  #logo {
+    position:relative;
+    top:15px;
+    border-radius:4px;
+    margin-right:700px;
+    width:200px;
+  }
+}
