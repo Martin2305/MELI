@@ -1,5 +1,7 @@
 A continuación dejo una guía de uso de la app:
 
+Se deberá instalar las dependencias: npm install
+
 Vistas:
 items?id=ID --> Vista de la pagina de publicación del producto. EJ: http://127.0.0.1:4444/search?q=Celular
 search?q=Producto --> Vista de la pagina de búsqueda. EJ: http://127.0.0.1:4444/items?id=MLA841841312
